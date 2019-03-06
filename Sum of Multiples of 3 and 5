@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Mar  6 18:06:24 2019
+
+@author: Mahsa
+@problem : sum of multiples of 3 or 5 below 1000
+"""
+sumAmount = 0
+for num in range(1000):
+    if num % 3 == 0 or num % 5 == 0:
+        sumAmount += num
+print(sumAmount)
