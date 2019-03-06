@@ -1,0 +1,12 @@
+a = 1
+b = 1
+c = a + b
+s = 0
+while(c < 4e6):
+    c = a + b
+    a = b
+    b = c
+    if(c % 2 == 0):
+        s += c
+
+print(s)
