@@ -1,0 +1,15 @@
+def sumOfSquare(num):
+    s = 0
+    for n in range(1,num+1):
+        s += n*n
+    return s
+
+def squareOfSum(num):
+    s = 0
+    for n in range(1,num+1):
+        s += n
+    return (s*s)
+
+
+print(squareOfSum(100) - sumOfSquare(100))
+        
