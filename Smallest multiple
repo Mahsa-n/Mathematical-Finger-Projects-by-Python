@@ -1,0 +1,14 @@
+fac = [1]
+for i in range(2,21):
+    for f in fac:
+        if i % f == 0:
+            i = i//f
+    if i > 1:
+        fac.append(i)
+
+prod = 1
+for item in fac:
+    prod *= item
+    
+print(prod)
+    
