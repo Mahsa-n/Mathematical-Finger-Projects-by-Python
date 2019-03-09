@@ -1,0 +1,18 @@
+def isPalindrome(num):
+    st = str(num)
+    while(len(st) > 0):
+        if st[0] == st[-1]:
+            st = st[1:-1]
+        else:
+            return False
+    return True
+
+maxpal = 0
+for i in range(100,1000):
+    for j in range(100,1000):
+        num = j * i
+        if (isPalindrome(num) and num > maxpal):
+            maxpal = num
+            print(i, j)
+            
+print(maxpal)
